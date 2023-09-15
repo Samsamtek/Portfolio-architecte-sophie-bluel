@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js"> </script>
 </head>
 
 <body>
@@ -31,10 +32,13 @@
     <section class="login-input">
         <div id="center-logo">Log in</div>
         <div class="text">E-mail</div>
-        <input class="gap" type="text" size="" placeholder="">
+        
+        <input id="email-input" class="gap" type="email" size="" placeholder="">
         <div class="text">Mots de passe</div>
-        <input class="gap" type="text" placeholder="">
-        <div class="container-center"><button class="log-button">Se connecter</button></div>
+        <input id="password-input" class="gap" type="password" placeholder="">
+        <div class="container-center">
+            <button onclick="myFunction()" class="log-button">Se connecter</button>
+        </div>
         <div class="container-center"><a id="end" href="mot de passe oublié">Mot de passe oublié</a></div>
     </section>
 
