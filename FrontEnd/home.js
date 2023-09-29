@@ -1,5 +1,6 @@
 //window.location.replace("http://127.0.0.1:5500/FrontEnd/login.html")
 
+const works = []
 
 async function getWorks() {
     return fetch('http://localhost:5678/api/works', {
@@ -34,7 +35,7 @@ async function getCategories() {
 
 
 async function populateWorks() {
-    const works = await getWorks();
+    works = await getWorks();
     console.log(works);
     const gallery = document.getElementsByClassName('gallery')[0]
     console.log(gallery)
@@ -51,13 +52,21 @@ async function populateWorks() {
 
         figure.appendChild(image)
         figure.appendChild(figcaption)
-        é
+
         gallery.appendChild(figure)
     }
 
 
 
 }
+
+function filtersWorks(category) {
+    // faire une var qui se nomme (filterworks = var qui tri
+    // regarder la dox mozzila et utiliser le filters sur le tableau works elle crée et retourne le tab 
+    console.log(category)
+}
+
+
 
 async function populateFilters() {
     const categories = await getCategories();
@@ -73,6 +82,7 @@ async function populateFilters() {
         filterButton.textContent = category.name;
 
         filterButton.addEventListener('click', () => {
+            filtersWorks(category.name)
             // Logique de filtrage ici (à implémenter)
         });
 

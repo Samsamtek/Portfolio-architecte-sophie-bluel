@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	background-color: rgba(255, 254, 248, 1);
 }
 ol, ul {
 	list-style: none;
@@ -184,5 +185,44 @@ footer nav ul {
 	display: flex;
 	justify-content: flex-end;
 	margin: 2em
+}
+
+.log-button{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 179px;
+	height: 36px;
+	left: 630px;
+	top: 529px;
+	background: #1D6154;
+	border-radius: 60px;
+	margin-bottom: 30px;
+}
+
+div.FiltersButton {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+button.log-button {
+	margin-left: 10px;
+	background-color: rgba(255, 254, 248, 1);
+	transition: 0.3s ease;
+	font-family: 'Syne';
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+	letter-spacing: 0em;
+	text-align: center;
+	color: #1D6154;
+	border-color: #1D6154;
+
+}
+
+.log-button:hover {
+    background-color: #1D6154;
+	color: rgba(255, 254, 248, 1);
 }
 
