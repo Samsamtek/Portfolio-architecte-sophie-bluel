@@ -1,6 +1,6 @@
 //window.location.replace("http://127.0.0.1:5500/FrontEnd/login.html")
 
-const works = []
+let works = []
 
 async function getWorks() {
     return fetch('http://localhost:5678/api/works', {
